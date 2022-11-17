@@ -1,5 +1,5 @@
 #LISTAS
-"""
+
 Lista: es una coleccion de diferentes tipos de datos, que esta ordenada y puede modificarse. Permite miembros duplicados.
 Tupla: es una coleccion que esta ordenada y no puede modificarse. Permite miembros duplicados.
 Conjunto: es una coleccion que NO esta ordenada, ni indexada, y no puede modificarse, pero podemos anadir nuevos items. No permite miembros duplicados.
@@ -128,7 +128,7 @@ edades = sorted(edades,reverse=True)
 print(edades)
 
 print('\n')
-"""
+
 #1. Declarar una lista vacia.
 
 lista_vacia = list()
