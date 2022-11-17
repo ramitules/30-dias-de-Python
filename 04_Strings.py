@@ -1,4 +1,4 @@
-"""# STRINGS
+# STRINGS
 
 my_string = "Mi string"
 other_string = "Otro string"
@@ -75,7 +75,7 @@ ab = "for "
 ac = "all"
 todo = aa + ab + ac
 print (todo)
-"""
+
 #3. Declare a variable named company and assign it to an initial value "Coding for all"
 
 from gettext import find
