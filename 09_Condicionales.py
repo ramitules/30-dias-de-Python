@@ -6,7 +6,7 @@ Si el procesamiento logico lo requiere, el flujo de secuencias de la ejecucion p
     -> Ejecucion repetitiva: un bloque de una o mas declaraciones seran repetitivamente ejecutadas mientras una cierta expresion sea verdadera.
 
 En esta seccion, veremos las declaraciones IF, ELSE, ELIF. Los operadores logicos y de comparacion que vimos en secciones anteriores seran de utilidad aqui.
-
+"""
 
 a = 3
 
@@ -108,7 +108,7 @@ if fruta in fruits: print('La fruta ya existe en la lista')
 else:
     fruits.append(fruta)
     print(fruits)
-"""
+
 #7. Here we have a person dictionary. Feel free to modify it!
 person={
     'first_name': 'Ramiro',
