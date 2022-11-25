@@ -2,7 +2,7 @@
 """
 La vida esta llena de rutinas. En programacion tambien tenemos muchas tareas repetitivas. Para poder administrar estas tareas en un lenguaje, usamos bucles.
 Python posee los bucles WHILE y FOR
-
+"""
 
 # Usamos WHILE para ejecutar un conjunto de tareas hasta que una condicion se cumpla. Cuando la condicion se torna falsa,
 # continua la ejecucion despues del bucle.
@@ -223,7 +223,7 @@ for x in range(1, 3):
     frutas[x - 1] = frutas[-x]
     frutas[-x] = aux
 else: print(frutas)
-"""
+
 #13. Go to the data folder and use the countries_data.py file. 
 from countries_data import paises as p
 
