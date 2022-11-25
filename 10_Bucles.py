@@ -126,7 +126,6 @@ for number in range(11):
 else:
     print('The loop stops at', number)
 
-# In python when statement is required (after semicolon), but we don't like to execute any code there, we can write the word pass to avoid errors. Also we can use it as a placeholder, for future statements.
 # En Python, cuando una declaracion es requerida despues de dos puntos, pero no queremos ejecutar ningun codigo, podemos escribir PASS para evitar errores.
 # Tambien lo podemos utilizar como un marcador para futuras declaraciones
 for number in range(6):

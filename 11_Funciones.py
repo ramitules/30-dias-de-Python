@@ -68,6 +68,7 @@ def generar_grupos(grupo, *nombres):
 print(generar_grupos('Python', 'El', 'Ella', 'Ellos'))
 """
 #1. Declare a function add_two_numbers. It takes two parameters and it returns a sum.
+from mailbox import NoSuchMailboxError
 from tkinter.ttk import setup_master
 
 
@@ -110,4 +111,111 @@ def chequear_temporada(mes):
 	else: return 'Primavera'
 
 #6. Write a function called calculate_slope which return the slope of a linear equation
-def calcular_pendiente()
+def calcular_pendiente(y, x, independiente):
+	return x
+
+#7. Quadratic equation is calculated as follows: ax² + bx + c = 0.
+# Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn.
+def solucionar_ecuacion_cuadratica(a, b, c):
+	x = (-b + (((b ** 2) - (4 * a * c)) ** 0.5)) / (2 * a)
+	x2 = (-b - (((b ** 2) - (4 * a * c)) ** 0.5)) / (2 * a)
+
+	solucion = {x, x2}
+	return solucion
+
+#8. Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
+def mostrar_lista(lista):
+	for x in lista: print(x)
+
+#9. Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops).
+def lista_inversa(*z):
+	for x in range(1, len(z)+1): print(z[-x])
+	else: return 'Fin'
+
+#10. Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
+def lista_mayusculas(lista):
+	mayusculas = []
+	for x in lista: mayusculas.append(x.capitalize())
+	return mayusculas
+
+frutas = ['banana', 'manzana', 'pera']
+
+#11. Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
+def anadir_item(lista, item):
+	lista2 = []
+	for x in lista: lista2.append(x)
+	else: lista2.append(item)
+	return lista2
+	
+#12. Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
+def remover_item(lista, item):
+	lista2 = lista.copy()
+	lista2.remove(item)
+	return lista2
+
+#13. Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
+def suma_de_numeros(numero):
+	suma = numero
+	for x in range(0, numero): suma += x
+	return suma
+
+#14. Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range.
+def suma_de_pares(numero):
+	suma = 0
+	if numero % 2 == 0: suma = numero
+	for x in range(0, numero):
+		if x % 2 == 0: suma += x
+	return suma
+
+#15. Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that range.
+def suma_de_impares(numero):
+	suma = 0
+	if numero % 2 != 0: suma = numero
+	for x in range(0, numero):
+		if x % 2 != 0: suma += x
+	return suma
+
+#16. Declare a function named evens_and_odds.
+# It takes a positive integer as parameter and it counts number of evens and odds in the number.
+def pares_e_impares(numero):
+	pares = 0
+	impares = 0
+	for x in range(0, numero):
+		if x % 2 == 0: pares += 1
+		else: impares += 1
+	print('Pares: ', pares)
+	print('Impares: ', impares)
+
+#17. Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+def factorial(numero):
+	f = 1
+	for x in range(1, numero+1): f *= x
+	return f
+
+#18. Call your function is_empty, it takes a parameter and it checks if it is empty or not
+def vacio(x):
+	for y in x: return 'No vacio'
+	else: return 'Vacio'
+
+#19. Write a function called is_prime, which checks if a number is prime.
+def es_primo(numero):
+	if numero > 1:
+		aux = 0
+		for x in range(1, numero +1):
+			if numero % x == 0: aux += 1
+		if aux == 2: print('Es primo')
+		else: print('No es primo')
+	else: print('No es primo')
+
+#20. Write a functions which checks if all items are unique in the list.
+def chequear_unicos(lista):
+	s = set(lista)
+	if len(s) == len(lista): return True
+	else: return False
+
+#21. Write a function which checks if all the items of the list are of the same data type.
+def chequear_tipo(lista):
+	check = lista[0]
+	for x in lista:
+		if type(x) != type(check): return False
+	else: return True
