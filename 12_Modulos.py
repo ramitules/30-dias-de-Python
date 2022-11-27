@@ -2,7 +2,7 @@
 """
 Un modulo es un archivo que contiene un conjunto de codigo o un conjunto de funciones, que puede incluirse en una aplicacion.
 Un modulo puede ser un archivo con una simple variable, una funcion o un gran codigo base.
-
+"""
 
 # Para crear un modulo escribimos nuestro codigo en un script de Python y lo guardamos como un archivo .py
 
@@ -60,7 +60,7 @@ print(string.punctuation)
 from random import *
 print(random()) #Devuelve entre 0 y 0.9999
 print(randint(5, 20)) #Devuelve un entero entre el primer y segundo numero inclusive
-"""
+
 #1. Write a function which generates a six digit/character random_user_id. 
 import string, random
 from typing import ForwardRef
