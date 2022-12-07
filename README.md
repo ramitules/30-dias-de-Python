@@ -1,1 +1,3 @@
-Primer proyecto Python
+30 dias de Python explicando cada tema en español.
+
+Ejercicios resueltos.
