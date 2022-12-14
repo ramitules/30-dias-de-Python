@@ -104,3 +104,4 @@ print(coincidencias) #['Manzana', 'manzana']
 #|: o uno o el otro
 #   r'manzana|banana' o manzana o banana
 #(): capturar y agrupar
+
