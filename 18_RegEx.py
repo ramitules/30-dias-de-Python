@@ -20,10 +20,10 @@ match = re.match('Me encanta programar', txt, re.I) #re.I para ignorar mayuscula
 print(match) #<re.Match object; span=(0, 20), match='Me encanta programar'>
 
 span = match.span() #Obtenemos el punto de inicio y final como una tupla
-print(span) #(0, 15)
+print(span) #(0, 20)
 
 comienzo, final = span
-print(comienzo, final) #0, 15
+print(comienzo, final) #0, 20
 
 substring = txt[comienzo:final]
 print(substring) #Me encanta programar
@@ -105,3 +105,27 @@ print(coincidencias) #['Manzana', 'manzana']
 #   r'manzana|banana' o manzana o banana
 #(): capturar y agrupar
 
+#1. What is the most frequent word in the following paragraph?
+paragraph = 'I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.'
+lista = re.split('\s',paragraph)
+nueva = []
+for i in lista:
+    nueva.append((lista.count(i), i))
+nueva2 = set(nueva)
+nueva3 = sorted(nueva2)
+print(nueva3)
+
+#2. The position of some particles on the horizontal x-axis are -1, 2, -4, -3 and -1 in the negative direction, 0 at origin, 
+# 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles.
+points = ['-1', '2', '-4', '-3', '-1', '0', '4', '8']
+puntos1 = [int(i) for i in points]
+puntos1.sort()
+diferencia = abs(puntos1[0]) + abs(puntos1[-1])
+print(diferencia)
+
+#3. Write a pattern which identifies if a string is a valid python variable
+is_valid_variable('first_name') # True
+is_valid_variable('first-name') # False
+is_valid_variable('1first_name') # False
+is_valid_variable('firstname') # True
+patron = r'^\D'
