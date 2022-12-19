@@ -1,0 +1,10 @@
+<?xml version ="1.0"?>
+<persona genero="macho_alfa">
+	<nombre>Ramiro</nombre>
+	<pais>Argentina</pais>
+	<provincia>Mendoza</provincia>
+	<habilidades>
+		<habilidad>C++</habilidad>
+		<habilidad>Python</habilidad>
+	</habilidades>
+</persona>

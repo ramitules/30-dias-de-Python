@@ -1,0 +1,1 @@
+Este texto se escribira en un archivo nuevo, sobreescribiendo al anterior
