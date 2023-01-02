@@ -124,8 +124,11 @@ diferencia = abs(puntos1[0]) + abs(puntos1[-1])
 print(diferencia)
 
 #3. Write a pattern which identifies if a string is a valid python variable
-is_valid_variable('first_name') # True
-is_valid_variable('first-name') # False
-is_valid_variable('1first_name') # False
-is_valid_variable('firstname') # True
-patron = r'^\D'
+patron = r'^\D*_'
+
+#4. Clean the following text. After cleaning, count three most frequent words in the string.
+sentence = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;.
+There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple.
+;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'''
+
+oracion = re.sub(r'[^ a-zA-Z]','',sentence)
