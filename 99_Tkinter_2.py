@@ -4,7 +4,7 @@ ventana = Tk()
 ventana.title("Hello world")
 ventana.geometry("720x480")
 
-btn = Button(ventana, text = "Presionar", command = exit)    #Se crea un boton
+btn = Button(ventana, text = "Presionar", command = exit)
 
 # Definir el modo en que deben colocarse los widgets dentro de una ventana
 
