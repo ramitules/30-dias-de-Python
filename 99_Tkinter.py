@@ -7,7 +7,7 @@ from tkinter import *
 
 ventana = Tk()
 ventana.title("Hello world")    #Titulo principal de la ventana
-ventana.geometry("720x480")     #Tamaño de la ventana
+ventana.geometry("720x480")     #Tamaï¿½o de la ventana
 
 lbl = Label(ventana, text = "Este es un label")     #Se crea un texto o etiqueta
 lbl.pack()
