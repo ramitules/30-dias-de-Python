@@ -15,6 +15,7 @@ comboExample.current(0)
 comboExample.bind("<<ComboboxSelected>>", callbackFunc)
 # Con esto se crearia un menu desplegable.
 
+
 messagebox.showinfo(message='Mensaje', title='Titulo de la ventana')
 # Con eso se crearia un cuadro de dialogo. Es una ventana modal (no se permite hace nada a menos que se cierre el dialogo)
 # Las funciones de interrogacion retornan True o False
